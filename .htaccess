@@ -1,0 +1,7 @@
+# komentar
+
+RewriteEngine on
+#RewriteRule kontakt index.php?stranka=kontakt
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php?stranka=$1
